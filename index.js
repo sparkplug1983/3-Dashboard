@@ -52,7 +52,57 @@ const obtainId = async () => {
         }
     });
 
-    new Chart(bar, {
+    new Chart(myChart2, {
+        type: 'line',
+        data: {
+            labels: dependencies,
+            datasets: [{
+                label: 'winner',
+                data: values,
+                backgroundColor: [
+                    'blue',
+
+                ],
+            }]
+        },
+        options: {
+            layout:{
+                padding:40
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    new Chart(myChart3, {
+        type: 'pie',
+        data: {
+            labels: dependencies,
+            datasets: [{
+                label: 'winner',
+                data: values,
+                backgroundColor: [
+                    'aqua',
+                    'yellow',
+                ],
+            }]
+        },
+        options: {
+            layout:{
+                padding:60
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    new Chart(myChart4, {
         type: 'bar',
         data: {
             labels: dependencies,

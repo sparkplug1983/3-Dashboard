@@ -13,7 +13,7 @@
   #page > header {
     grid-area: head;
     background-color: #121213;
-    border-radius: 80px;
+    border-radius: 0px;
     background-image: url(./images/logos.jpg);
     
   }
@@ -28,14 +28,19 @@
   }
   
   #page > main {
-    grid-area: main;
+    grid-area:auto;
     background-image: linear-gradient(to left top, #3d72af, #008ac1, #009eb0, #00ad7d, #40b533);
-    height: 60rem;
-    border-radius:1px;
-    justify-content: space-between;
-    display: -moz-grid-group;
+    height: 70rem;
+    border-radius:10px;
+    justify-content: center;
+    display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: max-content;
+    margin: auto;
+    width: 90%;
+    border: 3px solid green;
+    padding: 10px;
+
     
   }
   #page > footer {
