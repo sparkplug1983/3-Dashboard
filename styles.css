@@ -1,83 +1,75 @@
 #page {
-    display: grid;
-    width: 100%;
-    height: 200px;
-    grid-template-areas:
-      "head head"
-      "nav  main"
-      "nav  foot";
-    grid-template-rows: 95px 1fr 40px;
-    grid-template-columns: 200px 1fr;
-  }
-  
-  #page > header {
-    grid-area: head;
-    background-color: #121213;
-    border-radius: 0px;
-    background-image: url(./images/logos.jpg);
-    
-  }
-  
-  #page > nav {
-    grid-area: nav;
-    background-color: black;
-    border-radius:1px;
-   color: white;
-    background-size: 140%;
-    display: block;
-  }
-  
-  #page > main {
-    grid-area:auto;
-    background-image: linear-gradient(to left top, #3d72af, #008ac1, #009eb0, #00ad7d, #40b533);
-    height: 70rem;
-    border-radius:10px;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: max-content;
-    margin: auto;
-    width: 90%;
-    border: 3px solid green;
-    padding: 10px;
-
-    
-  }
-  #page > footer {
-    grid-area: foot;
-    background-color:#313644;
-    color: white;
-    text-align: center;
-  }
-  .box {
-    font-family: sans-serif;
-    font-size: 3em;
-    text-align: center;
-    color: white;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-  }
-  .card-body {
-    flex: 1 1 auto;
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    color: var(--bs-card-color)
-}   
-.card1 {
-  background-image: linear-gradient(0deg, #A2D2FF 5%, #6930c3 70%);
-  border: solid 1px rgb(239, 118, 225);
-  border-radius: 15px;
-  padding: 10px 10px 10px 10px;
-  text-align: left;
-  float: left;
-  margin: auto;
-  height: 65vh;
+  display: grid;
+  width: 100%;
+  height: 200px;
+  grid-template-areas:
+    "head head"
+    "nav  main"
+    "nav  foot";
+  grid-template-rows: 190px 1fr 50px;
+  grid-template-columns: 250px 1fr;
 }
-.card2 {
-  background-image: linear-gradient(0deg, #A2D2FF 5%, #6930c3 70%);
-  border: solid 1px rgb(239, 118, 225);
-  border-radius: 15px;
-  padding: 10px 10px 10px 10px;
-  text-align: left;
+
+#page>header {
+  grid-area: head;
+  border-style:groove;
+  background-image: url(./images/logos.jpg);
+  opacity: .7;
+
+}
+
+#page>nav {
+  grid-area: nav;
+  background-color: rgb(22, 20, 20);
+  border-radius: 1px;
+  color: white;
+  background-size: 140%;
+  display: block;
+}
+
+#page>main {
+  background-color: black;
+  gap: 20px;
+  width: 100%;
+  display: grid;
+
+}
+
+#page>footer {
+  grid-area: foot;
+  background-color: #313644;
+  color: white;
+  text-align:center;
+line-height: 50px;
+}
+
+
+.card-container {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav {
+  background-color: #060606;
+  float: left;
+  text-align: center;
+  padding: 15px 50px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+.rightnav {
+  background-color: whitesmoke;
+  color: purple;
   float: right;
-  margin: auto;
-  height: 65vh;
+  text-align: center;
+  padding: 45px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 15px;
+
 }
