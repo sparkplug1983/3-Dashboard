@@ -200,15 +200,7 @@ const obtainId = async () => {
             title: {
               display: true,
               text: 'Basketball Season',
-              yAxes: [
-                {
-                    ticks: {
-                            callback: function(val) {
-                            return Number.isInteger(val) ? val : null;
-                        }
-                    }
-                }
-            ]
+             
             }
         }
     });
@@ -220,7 +212,14 @@ const obtainId = async () => {
             datasets: [{
                 data: score3,
                 backgroundColor: [
-                    '#3a86ff',
+                    'green',
+                    'blue',
+                    'purple',
+                    'red',
+                    'yellow',
+                    'gray',
+                    'aqua',
+                    'white', 
                 ],
             }]
         },
@@ -290,7 +289,6 @@ const obtainId = async () => {
                     'yellow',
                     'gray',
                     'aqua',
-                    'white',
                 ],
             }]
         },
@@ -332,4 +330,3 @@ const obtainId = async () => {
     });
 
 }
-
